@@ -103,7 +103,7 @@ namespace ratscrew
 			{
 				players[takepot].hand.AddRange(pot);
 				pot = new List<Card>();
-				Console.WriteLine(players[takepot+1].name + " takes the pot!");
+				Console.WriteLine(players[takepot].name + " takes the pot!");
 				takepot = -1;
 			}
 		}
@@ -147,7 +147,7 @@ namespace ratscrew
 				}
 				else
 				{
-					Console.WriteLine(players[mod(index-1,2)].name + "wins!");
+					Console.WriteLine(players[mod(index-1,2)].name + " wins!");
 					return true;
 				}
 			}
